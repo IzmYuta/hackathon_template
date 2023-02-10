@@ -38,7 +38,7 @@ CSRF_TRUSTED_ORIGINS = env.list("DJANGO_CSRF_TRUSTED_ORIGINS", default=[])
 # Application definition
 
 INSTALLED_APPS = [
-    # Django chanells
+    # # Django chanells
     # "daphne",
     "django.contrib.admin",
     "django.contrib.auth",
@@ -46,6 +46,17 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # # CORS
+    # "corsheaders",
+    # # DRF
+    # "rest_framework",
+    # "rest_framework.authtoken",
+    # "dj_rest_auth",
+    # "dj_rest_auth.registration",
+    # "django.contrib.sites",
+    # "allauth",
+    # "allauth.account",
+    # "allauth.socialaccount",
 ]
 
 MIDDLEWARE = [
@@ -133,6 +144,11 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+# API docment
+# REST_FRAMEWORK = {"DEFAULT_SCHEMA_CLASS": "rest_framework.schemas.coreapi.AutoSchema"}
+
 
 # CORS
 CORS_ALLOW_ALL_ORIGINS = env.bool("DJANGO_CORS_ALLOW_ALL_ORIGINS", default=False)
