@@ -10,4 +10,4 @@ cp example.env .env
 ```bash
 docker compose up -d
 ```
-以上。[](http://127.0.0.1:8000/)にアクセスしてDjangoのWelcomeページが表示されれば成功。
+以上。 http://127.0.0.1:8000/ にアクセスしてDjangoのWelcomeページが表示されれば成功。
