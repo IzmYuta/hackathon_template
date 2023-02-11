@@ -10,13 +10,13 @@ flake8
 isort
 
 # DRF
-# django-cors-headers
-# djangorestframework
+django-cors-headers
+djangorestframework
 
 # WebSockets
-# channels
-# daphne
-# channels_redis
+channels
+daphne
+channels_redis
 
 # Create API docment
 # coreapi
